@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 220" width="740" height="220" font-family="monospace, sans-serif">
+  <rect width="740" height="220" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Friend Function Access Model (Non-Member with Private Access)</text>
+  <rect x="50" y="65" width="260" height="125" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="180" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b">class person</text>
+  <text x="70" y="122" font-size="13" fill="#0f172a">private: int age = 20;</text>
+  <text x="70" y="152" font-size="12" font-weight="bold" fill="#15803d">friend void print_age(p);</text>
+  <line x1="310" y1="125" x2="430" y2="125" stroke="#16a34a" stroke-width="3"/>
+  <rect x="435" y="65" width="255" height="125" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="562" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">void print_age(const person&amp; p)</text>
+  <text x="450" y="125" font-size="12" fill="#0f172a">• Non-member (no 'this')</text>
+  <text x="450" y="150" font-size="12" fill="#14532d">• Can read p.age directly!</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" width="760" height="240" font-family="monospace, sans-serif">
+  <rect width="760" height="240" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="380" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Memory Leak vs. Dangling Pointer</text>
+  <rect x="40" y="60" width="320" height="150" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="200" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">Memory Leak</text>
+  <text x="60" y="120" font-size="12" fill="#0f172a">int* p = new int(10);</text>
+  <text x="60" y="142" font-size="12" fill="#b91c1c">p = new int(20); // 1st block lost!</text>
+  <text x="60" y="170" font-size="12" fill="#78350f">Heap block [10] has no pointer</text>
+  <text x="60" y="188" font-size="12" fill="#78350f">and can never be freed.</text>
+
+  <rect x="400" y="60" width="320" height="150" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="560" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#991b1b">Dangling Pointer</text>
+  <text x="420" y="120" font-size="12" fill="#0f172a">int* p = new int(10);</text>
+  <text x="420" y="142" font-size="12" fill="#0f172a">delete p;</text>
+  <text x="420" y="164" font-size="12" font-weight="bold" fill="#b91c1c">*p = 99; // USE-AFTER-FREE UB!</text>
+  <text x="420" y="188" font-size="12" fill="#991b1b">Fix: Set p = nullptr; after delete.</text>
+</svg>

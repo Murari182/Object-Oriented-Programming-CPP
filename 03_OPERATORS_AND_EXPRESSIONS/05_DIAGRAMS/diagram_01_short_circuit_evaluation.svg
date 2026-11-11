@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 200" width="740" height="200" font-family="monospace, sans-serif">
+  <rect width="740" height="200" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Short-Circuit Evaluation of (A &amp;&amp; B) and (A || B)</text>
+  <rect x="40" y="60" width="320" height="110" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="200" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Logical AND: A &amp;&amp; B</text>
+  <text x="60" y="118" font-size="12">If A is FALSE -&gt; Result is FALSE</text>
+  <text x="60" y="142" font-size="12" font-weight="bold" fill="#b91c1c">(B is NOT evaluated at all!)</text>
+  <rect x="380" y="60" width="320" height="110" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="540" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Logical OR: A || B</text>
+  <text x="400" y="118" font-size="12">If A is TRUE -&gt; Result is TRUE</text>
+  <text x="400" y="142" font-size="12" font-weight="bold" fill="#14532d">(B is NOT evaluated at all!)</text>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 520" width="860" height="520" font-family="monospace, sans-serif">
+  <rect width="860" height="520" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="430" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Memory State Transitions for All 13 Pointer Expressions</text>
+  <text x="430" y="52" text-anchor="middle" font-size="13" fill="#334155">Baseline Before Each Expression: int arr[3] = {10, 20, 30}; int* p = &amp;arr[1] (0x1004);</text>
+
+  <!-- Initial Array State -->
+  <rect x="130" y="70" width="200" height="65" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="230" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">arr[0] = 10</text>
+  <text x="230" y="118" text-anchor="middle" font-size="12" fill="#475569">Addr: 0x1000 (p - 1)</text>
+
+  <rect x="330" y="70" width="200" height="65" fill="#bae6fd" stroke="#0284c7" stroke-width="3"/>
+  <text x="430" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0c4a6e">arr[1] = 20  [Initial *p]</text>
+  <text x="430" y="118" text-anchor="middle" font-size="12" fill="#0369a1">Addr: 0x1004 (p)</text>
+
+  <rect x="530" y="70" width="200" height="65" fill="#e2e8f0" stroke="#475569" stroke-width="2"/>
+  <text x="630" y="92" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e293b">arr[2] = 30</text>
+  <text x="630" y="118" text-anchor="middle" font-size="12" fill="#475569">Addr: 0x1008 (p + 1)</text>
+
+  <!-- Table Header -->
+  <rect x="30" y="155" width="800" height="28" fill="#1e293b"/>
+  <text x="50" y="174" font-size="12" font-weight="bold" fill="#ffffff">#   Expression</text>
+  <text x="210" y="174" font-size="12" font-weight="bold" fill="#ffffff">Grouping</text>
+  <text x="330" y="174" font-size="12" font-weight="bold" fill="#ffffff">Result</text>
+  <text x="420" y="174" font-size="12" font-weight="bold" fill="#ffffff">Final p Target</text>
+  <text x="590" y="174" font-size="12" font-weight="bold" fill="#ffffff">Final Array State</text>
+
+  <!-- 13 Rows -->
+  <g font-size="12" fill="#0f172a">
+    <text x="50" y="200">1.  *p++</text><text x="210" y="200">*(p++)</text><text x="330" y="200" font-weight="bold">20</text><text x="420" y="200" fill="#0369a1">&amp;arr[2] (0x1008)</text><text x="590" y="200">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="224">2.  (*p)++</text><text x="210" y="224">(*p)++</text><text x="330" y="224" font-weight="bold">20</text><text x="420" y="224">&amp;arr[1] (0x1004)</text><text x="590" y="224" fill="#15803d">{10, 21, 30} (arr[1]++)</text>
+    <text x="50" y="248">3.  ++*p</text><text x="210" y="248">++(*p)</text><text x="330" y="248" font-weight="bold">21</text><text x="420" y="248">&amp;arr[1] (0x1004)</text><text x="590" y="248" fill="#15803d">{10, 21, 30} (++arr[1])</text>
+    <text x="50" y="272">4.  *++p</text><text x="210" y="272">*(++p)</text><text x="330" y="272" font-weight="bold">30</text><text x="420" y="272" fill="#0369a1">&amp;arr[2] (0x1008)</text><text x="590" y="272">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="296">5.  ++(*p)</text><text x="210" y="296">++(*p)</text><text x="330" y="296" font-weight="bold">21</text><text x="420" y="296">&amp;arr[1] (0x1004)</text><text x="590" y="296" fill="#15803d">{10, 21, 30} (++arr[1])</text>
+    <text x="50" y="320">6.  *(++p)</text><text x="210" y="320">*(++p)</text><text x="330" y="320" font-weight="bold">30</text><text x="420" y="320" fill="#0369a1">&amp;arr[2] (0x1008)</text><text x="590" y="320">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="344">7.  *p--</text><text x="210" y="344">*(p--)</text><text x="330" y="344" font-weight="bold">20</text><text x="420" y="344" fill="#b45309">&amp;arr[0] (0x1000)</text><text x="590" y="344">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="368">8.  (*p)--</text><text x="210" y="368">(*p)--</text><text x="330" y="368" font-weight="bold">20</text><text x="420" y="368">&amp;arr[1] (0x1004)</text><text x="590" y="368" fill="#15803d">{10, 19, 30} (arr[1]--)</text>
+    <text x="50" y="392">9.  --*p</text><text x="210" y="392">--(*p)</text><text x="330" y="392" font-weight="bold">19</text><text x="420" y="392">&amp;arr[1] (0x1004)</text><text x="590" y="392" fill="#15803d">{10, 19, 30} (--arr[1])</text>
+    <text x="50" y="416">10. *--p</text><text x="210" y="416">*(--p)</text><text x="330" y="416" font-weight="bold">10</text><text x="420" y="416" fill="#b45309">&amp;arr[0] (0x1000)</text><text x="590" y="416">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="440">11. *(p + 1)</text><text x="210" y="440">*(p + 1)</text><text x="330" y="440" font-weight="bold">30</text><text x="420" y="440">&amp;arr[1] (0x1004)</text><text x="590" y="440">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="464">12. *(p - 1)</text><text x="210" y="464">*(p - 1)</text><text x="330" y="464" font-weight="bold">10</text><text x="420" y="464">&amp;arr[1] (0x1004)</text><text x="590" y="464">{10, 20, 30} (unchanged)</text>
+    <text x="50" y="488">13. *p + 1</text><text x="210" y="488">(*p) + 1</text><text x="330" y="488" font-weight="bold">21</text><text x="420" y="488">&amp;arr[1] (0x1004)</text><text x="590" y="488">{10, 20, 30} (unchanged)</text>
+  </g>
+</svg>

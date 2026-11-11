@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" width="760" height="250" font-family="monospace, sans-serif">
+  <rect width="760" height="250" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="380" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Stack Frame Pointer vs. Heap (Free Store) Allocation: int* p = new int(42);</text>
+  <rect x="60" y="65" width="240" height="140" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="180" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">STACK (main frame)</text>
+  <text x="180" y="130" text-anchor="middle" font-size="14" fill="#0f172a">int* p = 0x9000</text>
+  <text x="180" y="165" text-anchor="middle" font-size="12" fill="#475569">(Automatic lifetime)</text>
+  <line x1="300" y1="130" x2="450" y2="130" stroke="#0284c7" stroke-width="3"/>
+  <rect x="455" y="65" width="245" height="140" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="577" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">HEAP (Free Store)</text>
+  <text x="577" y="130" text-anchor="middle" font-size="16" font-weight="bold" fill="#14532d">Addr 0x9000: [ 42 ]</text>
+  <text x="577" y="165" text-anchor="middle" font-size="12" fill="#475569">(Freed only on delete p;)</text>
+</svg>

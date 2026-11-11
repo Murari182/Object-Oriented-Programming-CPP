@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" width="760" height="280" font-family="monospace, sans-serif">
+  <rect width="760" height="280" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="380" y="34" text-anchor="middle" font-size="18" font-weight="bold" fill="#0f172a">Pointer Memory Representation: int x = 25; int* p = &amp;x;</text>
+
+  <!-- Pointer p box -->
+  <rect x="60" y="80" width="240" height="120" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="180" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Variable: p (Type: int*)</text>
+  <text x="180" y="125" text-anchor="middle" font-size="13" fill="#334155">Stored Value (Address of x):</text>
+  <text x="180" y="155" text-anchor="middle" font-size="22" font-weight="bold" fill="#0c4a6e">0x1000</text>
+  <text x="180" y="225" text-anchor="middle" font-size="13" fill="#475569">Own Address (&amp;p): 0x2000 (8 bytes)</text>
+
+  <!-- Arrow from p to x -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0284c7"/>
+    </marker>
+  </defs>
+  <line x1="300" y1="140" x2="450" y2="140" stroke="#0284c7" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="375" y="125" text-anchor="middle" font-size="13" font-weight="bold" fill="#0284c7">Dereference (*p)</text>
+
+  <!-- Target int x box -->
+  <rect x="460" y="80" width="240" height="120" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="580" y="70" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Variable: x (Type: int)</text>
+  <text x="580" y="125" text-anchor="middle" font-size="13" fill="#334155">Stored Integer Data (*p):</text>
+  <text x="580" y="155" text-anchor="middle" font-size="24" font-weight="bold" fill="#14532d">25</text>
+  <text x="580" y="225" text-anchor="middle" font-size="13" fill="#475569">Own Address (&amp;x): 0x1000 (4 bytes)</text>
+</svg>

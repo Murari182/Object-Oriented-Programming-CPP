@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 200" width="740" height="200" font-family="monospace, sans-serif">
+  <rect width="740" height="200" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">C++ File Stream Classes and File Pointers</text>
+  <rect x="40" y="60" width="200" height="110" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="140" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">ifstream (Read)</text>
+  <text x="140" y="120" text-anchor="middle" font-size="12">seekg() / tellg()</text>
+  <rect x="270" y="60" width="200" height="110" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="370" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">ofstream (Write)</text>
+  <text x="370" y="120" text-anchor="middle" font-size="12">seekp() / tellp()</text>
+  <rect x="500" y="60" width="200" height="110" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="600" y="90" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">fstream (Both)</text>
+  <text x="600" y="120" text-anchor="middle" font-size="12">ios::in | ios::out</text>
+</svg>

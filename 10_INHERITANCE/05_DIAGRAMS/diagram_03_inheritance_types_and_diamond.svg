@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 280" width="780" height="280" font-family="monospace, sans-serif">
+  <rect width="780" height="280" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="390" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">The Diamond Problem vs. Virtual Base Class Resolution</text>
+
+  <!-- Top Base: person -->
+  <rect x="310" y="50" width="160" height="45" rx="6" fill="#bae6fd" stroke="#0284c7" stroke-width="2"/>
+  <text x="390" y="78" text-anchor="middle" font-size="14" font-weight="bold" fill="#0c4a6e">person (age)</text>
+
+  <!-- Left & Right Intermediate -->
+  <rect x="120" y="130" width="210" height="45" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="225" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#312e81">student : virtual person</text>
+
+  <rect x="450" y="130" width="210" height="45" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="555" y="158" text-anchor="middle" font-size="13" font-weight="bold" fill="#312e81">employee : virtual person</text>
+
+  <!-- Bottom Derived -->
+  <rect x="250" y="210" width="280" height="48" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="390" y="239" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">teaching_assistant (1 shared age)</text>
+
+  <!-- Connecting lines -->
+  <line x1="350" y1="95" x2="225" y2="130" stroke="#475569" stroke-width="2"/>
+  <line x1="430" y1="95" x2="555" y2="130" stroke="#475569" stroke-width="2"/>
+  <line x1="225" y1="175" x2="340" y2="210" stroke="#475569" stroke-width="2"/>
+  <line x1="555" y1="175" x2="440" y2="210" stroke="#475569" stroke-width="2"/>
+</svg>

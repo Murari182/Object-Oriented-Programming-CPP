@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 160" width="720" height="160" font-family="monospace, sans-serif">
+  <rect width="720" height="160" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="360" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Core Viva-Voce Pillars</text>
+  <rect x="40" y="60" width="640" height="70" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="360" y="100" text-anchor="middle" font-size="13" font-weight="bold" fill="#14532d">Pointers (*p++) | Protected Inheritance | Operator+ | Virtual/vtable | Stack Unwinding</text>
+</svg>

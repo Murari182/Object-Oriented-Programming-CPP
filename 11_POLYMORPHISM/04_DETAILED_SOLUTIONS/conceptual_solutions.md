@@ -1,0 +1,3 @@
+# Detailed Solutions — Conceptual Questions (Module 11)
+- **Q1 Solution**: Overloading happens in the same scope with different parameter lists and is resolved at compile time. Overriding happens between a base class and a derived class with the exact same signature (`virtual` in base, `override` in derived) and is resolved at runtime via the vtable.
+- **Q2 Solution**: Object slicing occurs when a derived object is copied by value into a base object (`base b = d;`), discarding derived data members and resetting the vptr to `base`. Prevent it by passing/referencing via `base*` or `const base&`.

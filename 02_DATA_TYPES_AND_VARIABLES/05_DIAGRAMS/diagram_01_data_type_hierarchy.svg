@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 200" width="740" height="200" font-family="monospace, sans-serif">
+  <rect width="740" height="200" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">C++ Data Type Classification</text>
+  <rect x="30" y="60" width="210" height="110" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="135" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#0369a1">Fundamental Types</text>
+  <text x="50" y="115" font-size="12">int, double, char,</text>
+  <text x="50" y="135" font-size="12">bool, void</text>
+  <rect x="265" y="60" width="210" height="110" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="370" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">Compound Types</text>
+  <text x="285" y="115" font-size="12">Pointers (T*), Arrays,</text>
+  <text x="285" y="135" font-size="12">References (T&amp;)</text>
+  <rect x="500" y="60" width="210" height="110" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="605" y="88" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">User-Defined Types</text>
+  <text x="520" y="115" font-size="12">class, struct,</text>
+  <text x="520" y="135" font-size="12">enum class, union</text>
+</svg>

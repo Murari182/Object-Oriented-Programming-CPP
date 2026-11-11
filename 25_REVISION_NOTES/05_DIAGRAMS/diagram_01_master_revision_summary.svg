@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 170" width="740" height="170" font-family="monospace, sans-serif">
+  <rect width="740" height="170" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Golden Rules for University C++ Examinations</text>
+  <rect x="35" y="55" width="670" height="85" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="370" y="85" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">1. Precedence != Sequencing (*p++ + *p++ is UB!)</text>
+  <text x="370" y="110" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">2. Protected inheritance allows access inside Derived, NOT in main()</text>
+</svg>

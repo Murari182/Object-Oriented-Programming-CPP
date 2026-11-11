@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 200" width="740" height="200" font-family="monospace, sans-serif">
+  <rect width="740" height="200" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Call by Value (Separate Copy) vs. Call by Reference (Direct Alias)</text>
+  <rect x="40" y="60" width="320" height="110" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="200" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Call by Value: void f(int x)</text>
+  <text x="60" y="118" font-size="12">main: n [10]   f: x [10 -&gt; 100]</text>
+  <text x="60" y="142" font-size="12">Caller's n stays 10!</text>
+  <rect x="380" y="60" width="320" height="110" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="540" y="88" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Call by Ref: void f(int&amp; r)</text>
+  <text x="400" y="118" font-size="12">main: n / r [10 -&gt; 300]</text>
+  <text x="400" y="142" font-size="12">r is an alias for n!</text>
+</svg>

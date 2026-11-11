@@ -1,0 +1,3 @@
+# Detailed Solutions — Conceptual Questions (Module 08)
+- **Q1 Solution**: `new` is an operator that automatically computes size, invokes the class constructor, returns a strongly-typed pointer `T*`, and throws `std::bad_alloc` on failure. `malloc()` is a C library function that only allocates raw uninitialized bytes, does not call constructors, returns `void*`, and returns `NULL` on failure. Similarly, `delete` invokes the destructor before freeing memory, whereas `free()` does not call destructors.
+- **Q2 Solution**: `new[]` stores array element count metadata and constructs an array of objects; `delete[]` reads that metadata to invoke the destructor on every element in reverse order before freeing the block. Using scalar `delete` on `new[]` is Undefined Behavior.

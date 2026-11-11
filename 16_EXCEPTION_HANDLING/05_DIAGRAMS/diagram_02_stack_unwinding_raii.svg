@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 260" width="780" height="260" font-family="monospace, sans-serif">
+  <rect width="780" height="260" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="390" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">The Three Exception Safety Guarantees (Abrahams Guarantees)</text>
+
+  <rect x="30" y="65" width="230" height="165" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="145" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">1. Basic Guarantee</text>
+  <text x="45" y="122" font-size="12" fill="#0f172a">• No memory/resource</text>
+  <text x="45" y="140" font-size="12" fill="#0f172a">  leaks.</text>
+  <text x="45" y="164" font-size="12" fill="#0f172a">• Class invariants stay</text>
+  <text x="45" y="182" font-size="12" fill="#0f172a">  valid, though values</text>
+  <text x="45" y="200" font-size="12" fill="#0f172a">  may have changed.</text>
+
+  <rect x="275" y="65" width="230" height="165" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="390" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">2. Strong Guarantee</text>
+  <text x="290" y="122" font-size="12" fill="#0f172a">• Commit-or-Rollback</text>
+  <text x="290" y="140" font-size="12" fill="#0f172a">  semantics.</text>
+  <text x="290" y="164" font-size="12" fill="#0f172a">• If an exception is</text>
+  <text x="290" y="182" font-size="12" fill="#0f172a">  thrown, state is 100%</text>
+  <text x="290" y="200" font-size="12" fill="#0f172a">  unchanged.</text>
+
+  <rect x="520" y="65" width="230" height="165" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="635" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">3. No-Throw (noexcept)</text>
+  <text x="535" y="122" font-size="12" fill="#0f172a">• Never throws an</text>
+  <text x="535" y="140" font-size="12" fill="#0f172a">  exception; always</text>
+  <text x="535" y="158" font-size="12" fill="#0f172a">  succeeds.</text>
+  <text x="535" y="182" font-size="12" fill="#14532d">• Required for ~T(),</text>
+  <text x="535" y="200" font-size="12" fill="#14532d">  swap(), move ops.</text>
+</svg>

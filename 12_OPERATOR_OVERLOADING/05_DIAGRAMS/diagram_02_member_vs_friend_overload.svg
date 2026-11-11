@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 260" width="780" height="260" font-family="monospace, sans-serif">
+  <rect width="780" height="260" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="390" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Member Operator Function vs. Friend Operator Function</text>
+
+  <rect x="35" y="65" width="340" height="160" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="205" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Member Function Approach</text>
+  <text x="55" y="122" font-size="12" fill="#0f172a">• Unary op:  0 explicit parameters</text>
+  <text x="55" y="146" font-size="12" fill="#0f172a">• Binary op: 1 explicit parameter</text>
+  <text x="55" y="170" font-size="12" fill="#0f172a">• Left operand passed via 'this'</text>
+  <text x="55" y="194" font-size="12" font-weight="bold" fill="#0c4a6e">• Call: c1.operator+(c2)</text>
+
+  <rect x="405" y="65" width="340" height="160" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="575" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">Friend (Non-Member) Approach</text>
+  <text x="425" y="122" font-size="12" fill="#0f172a">• Unary op:  1 explicit parameter</text>
+  <text x="425" y="146" font-size="12" fill="#0f172a">• Binary op: 2 explicit parameters</text>
+  <text x="425" y="170" font-size="12" fill="#0f172a">• No 'this' pointer; supports 10 + c1</text>
+  <text x="425" y="194" font-size="12" font-weight="bold" fill="#78350f">• Call: operator+(c1, c2)</text>
+</svg>

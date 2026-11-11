@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 220" width="740" height="220" font-family="monospace, sans-serif">
+  <rect width="740" height="220" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Abstract Base Class vs. Concrete Derived Classes</text>
+  <rect x="230" y="55" width="280" height="55" rx="6" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="370" y="78" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">Abstract: shape (Cannot Instantiate)</text>
+  <text x="370" y="98" text-anchor="middle" font-size="12" fill="#7f1d1d">virtual int area() const = 0;</text>
+
+  <rect x="90" y="145" width="240" height="55" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="210" y="170" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">Concrete: square</text>
+  <text x="210" y="190" text-anchor="middle" font-size="12" fill="#14532d">Overrides area() -&gt; side*side</text>
+
+  <rect x="410" y="145" width="240" height="55" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="530" y="170" text-anchor="middle" font-size="13" font-weight="bold" fill="#15803d">Concrete: rectangle</text>
+  <text x="530" y="190" text-anchor="middle" font-size="12" fill="#14532d">Overrides area() -&gt; l*b</text>
+</svg>

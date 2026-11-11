@@ -1,0 +1,3 @@
+# Detailed Solutions — Conceptual Questions (Module 15)
+- **Q1 Solution**: A constructor initializes the object and sets up its `vptr` to point to the class's `vtable`; before construction begins, no `vptr` exists to dispatch virtually. A base destructor must be `virtual` so `delete base_ptr;` invokes the derived destructor first instead of causing Undefined Behavior.
+- **Q2 Solution**: A pure virtual function is declared with `= 0` and makes its class abstract. Yes, C++ allows a pure virtual function to have a body defined outside the class (which derived classes can call statically via `Base::func()`), though the class remains abstract! Pure virtual destructors (`virtual ~Base() = 0;`) **must** provide a body.

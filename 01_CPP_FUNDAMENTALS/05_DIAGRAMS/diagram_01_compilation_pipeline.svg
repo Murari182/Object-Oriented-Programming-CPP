@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 180" width="800" height="180" font-family="monospace, sans-serif">
+  <rect width="800" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="400" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">The Four Stages of C++ Compilation</text>
+  <rect x="25" y="65" width="150" height="75" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="100" y="95" text-anchor="middle" font-size="13" font-weight="bold">1. Preprocessor</text>
+  <text x="100" y="118" text-anchor="middle" font-size="11">main.cpp -&gt; main.ii</text>
+  <rect x="220" y="65" width="150" height="75" rx="6" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2"/>
+  <text x="295" y="95" text-anchor="middle" font-size="13" font-weight="bold">2. Compiler</text>
+  <text x="295" y="118" text-anchor="middle" font-size="11">main.ii -&gt; main.s</text>
+  <rect x="415" y="65" width="150" height="75" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="490" y="95" text-anchor="middle" font-size="13" font-weight="bold">3. Assembler</text>
+  <text x="490" y="118" text-anchor="middle" font-size="11">main.s -&gt; main.o</text>
+  <rect x="610" y="65" width="165" height="75" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="692" y="95" text-anchor="middle" font-size="13" font-weight="bold">4. Linker</text>
+  <text x="692" y="118" text-anchor="middle" font-size="11">main.o -&gt; executable</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" width="720" height="180" font-family="monospace, sans-serif">
+  <rect width="720" height="180" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="360" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Component-Wise Addition of Quadratic Polynomials</text>
+  <rect x="60" y="55" width="600" height="95" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="360" y="85" text-anchor="middle" font-size="14" fill="#0f172a">p1 = 3x^2 + 4x + 5    |    p2 = 2x^2 + 6x + 1</text>
+  <text x="360" y="125" text-anchor="middle" font-size="15" font-weight="bold" fill="#14532d">p1 + p2 = (3+2)x^2 + (4+6)x + (5+1) = 5x^2 + 10x + 6</text>
+</svg>

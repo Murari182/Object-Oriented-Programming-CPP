@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" width="760" height="240" font-family="monospace, sans-serif">
+  <rect width="760" height="240" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="380" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Contiguous Memory Layout: int arr[3] = {10, 20, 30}; and char s[4] = "C++";</text>
+
+  <text x="50" y="75" font-size="13" font-weight="bold" fill="#0369a1">1D int Array (4 bytes each):</text>
+  <rect x="50" y="88" width="160" height="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="130" y="118" text-anchor="middle" font-size="13" fill="#0c4a6e">arr[0]=10 (0x1000)</text>
+  <rect x="210" y="88" width="160" height="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="290" y="118" text-anchor="middle" font-size="13" fill="#0c4a6e">arr[1]=20 (0x1004)</text>
+  <rect x="370" y="88" width="160" height="50" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="450" y="118" text-anchor="middle" font-size="13" fill="#0c4a6e">arr[2]=30 (0x1008)</text>
+
+  <text x="50" y="168" font-size="13" font-weight="bold" fill="#15803d">C-String char s[4] = "C++" (Includes Null Terminator '\0'):</text>
+  <rect x="50" y="180" width="110" height="42" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="105" y="206" text-anchor="middle" font-size="13">'C'</text>
+  <rect x="160" y="180" width="110" height="42" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="215" y="206" text-anchor="middle" font-size="13">'+'</text>
+  <rect x="270" y="180" width="110" height="42" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="325" y="206" text-anchor="middle" font-size="13">'+'</text>
+  <rect x="380" y="180" width="140" height="42" fill="#fee2e2" stroke="#dc2626" stroke-width="2"/>
+  <text x="450" y="206" text-anchor="middle" font-size="13" font-weight="bold" fill="#991b1b">'\0' (Null)</text>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="800" height="280" font-family="monospace, sans-serif">
+  <rect width="800" height="280" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="400" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">How c3 = c1 + c2 Invokes c1.operator+(c2) in complex_system</text>
+
+  <!-- c1 box -->
+  <rect x="40" y="75" width="210" height="115" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="145" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Left Operand: c1 (*this)</text>
+  <text x="145" y="132" text-anchor="middle" font-size="14" fill="#0f172a">this-&gt;real = 3</text>
+  <text x="145" y="158" text-anchor="middle" font-size="14" fill="#0f172a">this-&gt;imag = 4</text>
+
+  <text x="275" y="138" text-anchor="middle" font-size="24" font-weight="bold" fill="#0284c7">+</text>
+
+  <!-- c2 box -->
+  <rect x="300" y="75" width="210" height="115" rx="6" fill="#ede9fe" stroke="#6d28d9" stroke-width="2"/>
+  <text x="405" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#5b21b6">Right Arg: obj (c2)</text>
+  <text x="405" y="132" text-anchor="middle" font-size="14" fill="#0f172a">obj.real = 5</text>
+  <text x="405" y="158" text-anchor="middle" font-size="14" fill="#0f172a">obj.imag = 6</text>
+
+  <text x="535" y="138" text-anchor="middle" font-size="22" font-weight="bold" fill="#16a34a">=&gt;</text>
+
+  <!-- c3 return box -->
+  <rect x="560" y="75" width="205" height="115" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="662" y="100" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Returned temp -&gt; c3</text>
+  <text x="662" y="132" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">temp.real = 3+5 = 8</text>
+  <text x="662" y="158" text-anchor="middle" font-size="14" font-weight="bold" fill="#14532d">temp.imag = 4+6 = 10</text>
+
+  <text x="400" y="235" text-anchor="middle" font-size="14" font-weight="bold" fill="#334155">Compiler Translation:  c1 + c2   ===   c1.operator+(c2)</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 190" width="740" height="190" font-family="monospace, sans-serif">
+  <rect width="740" height="190" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="370" y="32" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">Namespace Scope Isolation in Global Scope</text>
+  <rect x="60" y="55" width="270" height="105" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="195" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">namespace physics</text>
+  <text x="195" y="120" text-anchor="middle" font-size="13">physics::value = 300</text>
+  <rect x="410" y="55" width="270" height="105" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="545" y="85" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">namespace maths</text>
+  <text x="545" y="120" text-anchor="middle" font-size="13">maths::value = 400</text>
+</svg>

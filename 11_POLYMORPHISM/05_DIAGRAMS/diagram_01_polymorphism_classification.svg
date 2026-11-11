@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" width="760" height="240" font-family="monospace, sans-serif">
+  <rect width="760" height="240" fill="#f8fafc" rx="8" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="380" y="34" text-anchor="middle" font-size="16" font-weight="bold" fill="#0f172a">C++ Polymorphism Classification</text>
+  <rect x="40" y="65" width="320" height="145" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="200" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#0369a1">Compile-Time (Early Binding)</text>
+  <text x="60" y="122" font-size="13" fill="#0f172a">1. Function Overloading</text>
+  <text x="60" y="148" font-size="13" fill="#0f172a">2. Operator Overloading</text>
+  <text x="60" y="174" font-size="13" fill="#0f172a">3. Templates (Generic)</text>
+
+  <rect x="400" y="65" width="320" height="145" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="560" y="92" text-anchor="middle" font-size="14" font-weight="bold" fill="#15803d">Runtime (Late Binding)</text>
+  <text x="420" y="122" font-size="13" fill="#0f172a">1. Virtual Functions</text>
+  <text x="420" y="148" font-size="13" fill="#0f172a">2. Base Pointer / Reference</text>
+  <text x="420" y="174" font-size="13" fill="#0f172a">3. vtable &amp; vptr Dispatch</text>
+</svg>
